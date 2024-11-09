@@ -13,6 +13,7 @@ addTodoBtn.addEventListener("click", function () {
   todoItem.classList.add("todo-item")
   todoItem.innerHTML = '<span class="span">' + input.value + '</span><button class="complete-btn">✔️</button><button class="edit-btn">✏️</button><button class="delete-btn">🗑️</button>'
 
+  input.value=''
   const deleteBtn = todoItem.querySelector(".delete-btn")
   const completeBtn = todoItem.querySelector(".complete-btn")
   const editBtn = todoItem.querySelector(".edit-btn")
